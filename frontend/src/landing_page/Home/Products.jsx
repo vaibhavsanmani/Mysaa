@@ -76,50 +76,55 @@ function Products() {
   ];
 
   return (
-    <div className="container py-5">
-      <div className="row">
+    <div className="container py-4 py-md-5">
+      <div className="row g-3 g-md-4">
 
         {products.map((item) => (
-          <div className="col-md-4 mb-4" key={item.id}>
+          <div
+            className="col-12 col-sm-6 col-lg-4"
+            key={item.id}
+          >
             <div
-              className="h-100 card-hover"
+              className="h-100 card-hover shadow-sm"
               style={{
-                border: "1px solid #ddd",
-                borderRadius: "20px",
+                borderRadius: "16px",
                 background: "#fff",
-                overflow: "hidden"
+                overflow: "hidden",
+                transition: "0.3s"
               }}
             >
 
-              {/* IMAGE CLICKABLE */}
-              <Link to={`/product/${item.id}`} style={{ textDecoration: "none" }}>
+              {/* IMAGE */}
+              <Link to={`/product/${item.id}`}>
                 <img
                   src={item.image}
                   alt={item.name}
+                  className="img-fluid"
                   style={{
                     width: "100%",
-                    height: "220px",
+                    height: "200px",
                     objectFit: "cover"
                   }}
                 />
               </Link>
 
               {/* CONTENT */}
-              <div className="p-4">
+              <div className="p-3 p-md-4">
 
-                {/* NAME CLICKABLE */}
-                <Link 
-                  to={`/product/${item.id}`} 
-                  style={{ textDecoration: "none", color: "black" }}
+                <Link
+                  to={`/product/${item.id}`}
+                  style={{ textDecoration: "none", color: "#000" }}
                 >
-                  <h5>{item.name}</h5>
+                  <h6 className="mb-2">{item.name}</h6>
                 </Link>
 
-                <p className="text-muted">{item.description}</p>
+                <p className="text-muted small mb-2">
+                  {item.description}
+                </p>
 
-                <div className="d-flex justify-content-between align-items-center mt-3">
+                <div className="d-flex justify-content-between align-items-center">
                   <span className="fw-bold">{item.price}</span>
-                  <button className="btn btn-dark rounded-pill px-3">
+                  <button className="btn btn-dark btn-sm rounded-pill px-3">
                     Add
                   </button>
                 </div>
