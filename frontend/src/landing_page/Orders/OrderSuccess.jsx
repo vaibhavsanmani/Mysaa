@@ -3,41 +3,41 @@ import { Link } from "react-router-dom";
 
 function OrderSuccess() {
   return (
-    <div className="container py-5">
+    <div className="container py-3 py-md-5">
 
       {/* SUCCESS MESSAGE */}
       <div
-        className="text-center mb-4 p-4"
+        className="text-center mb-3 mb-md-4 p-3 p-md-4"
         style={{
           border: "1px solid #ddd",
-          borderRadius: "20px",
+          borderRadius: "16px",
           background: "#fff"
         }}
       >
-        <h2 className="mb-2">✅ Order Placed Successfully</h2>
-        <p className="text-muted">Thank you for your purchase!</p>
+        <h4 className="mb-2">✅ Order Placed Successfully</h4>
+        <p className="text-muted mb-0">Thank you for your purchase!</p>
       </div>
 
-      <div className="row">
+      <div className="row g-3 g-md-4">
 
-        {/* BILL DETAILS */}
-        <div className="col-md-8">
+        {/* LEFT - INVOICE */}
+        <div className="col-12 col-lg-8">
           <div
-            className="p-4"
+            className="p-3 p-md-4"
             style={{
               border: "1px solid #ddd",
-              borderRadius: "20px",
+              borderRadius: "16px",
               background: "#fff"
             }}
           >
             <h5 className="mb-3">Order Invoice</h5>
 
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between small">
               <span>Order ID</span>
               <span>#MYSA12345</span>
             </div>
 
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between small">
               <span>Date</span>
               <span>Today</span>
             </div>
@@ -63,7 +63,7 @@ function OrderSuccess() {
 
             <div className="d-flex justify-content-between">
               <span>Discount</span>
-              <span>-$45</span>
+              <span>- $45</span>
             </div>
 
             <div className="d-flex justify-content-between">
@@ -80,23 +80,29 @@ function OrderSuccess() {
           </div>
         </div>
 
-        {/* ACTION BUTTONS */}
-        <div className="col-md-4">
+        {/* RIGHT - ACTIONS */}
+        <div className="col-12 col-lg-4">
           <div
-            className="p-4 text-center"
+            className="p-3 p-md-4 text-center"
             style={{
               border: "1px solid #ddd",
-              borderRadius: "20px",
+              borderRadius: "16px",
               background: "#fff"
             }}
           >
             <h5 className="mb-3">What next?</h5>
 
-            <Link to="/cart" className="btn btn-outline-dark w-100 mb-2 rounded-pill">
+            <Link
+              to="/cart"
+              className="btn btn-outline-dark w-100 mb-2 rounded-pill"
+            >
               Back to Cart
             </Link>
 
-            <Link to="/" className="btn btn-dark w-100 rounded-pill">
+            <Link
+              to="/"
+              className="btn btn-dark w-100 rounded-pill"
+            >
               Continue Shopping
             </Link>
           </div>
