@@ -17,7 +17,6 @@ function Cart() {
 
         {/* CART ITEMS */}
         <div className="col-12 col-lg-8">
-
           <div className="p-3 p-md-4 border rounded-4">
 
             <h5 className="mb-3">Your Cart</h5>
@@ -28,11 +27,13 @@ function Cart() {
                 {/* TOP: IMAGE + NAME */}
                 <div className="d-flex align-items-center gap-3 mb-2">
                   <img src={`./images/art${item}.jpeg`} style={imgStyle} />
-                  <p className="mb-0 fw-semibold">Painting {item}</p>
+                  <p className="mb-0 fw-semibold small small-md-normal">
+                    Painting {item}
+                  </p>
                 </div>
 
-                {/* BOTTOM: QTY + PRICE + DELETE */}
-                <div className="d-flex justify-content-between align-items-center">
+                {/* BOTTOM */}
+                <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
 
                   {/* QTY */}
                   <div
@@ -40,26 +41,30 @@ function Cart() {
                     style={{
                       border: "1px solid #ccc",
                       borderRadius: "50px",
-                      width: "90px",
-                      height: "32px"
+                      width: "100px",
+                      height: "36px"
                     }}
                   >
-                    <button className="btn btn-sm p-0 border-0">-</button>
+                    <button className="btn btn-sm p-0 border-0 fs-5">-</button>
                     <span>1</span>
-                    <button className="btn btn-sm p-0 border-0">+</button>
+                    <button className="btn btn-sm p-0 border-0 fs-5">+</button>
                   </div>
 
-                  {/* PRICE */}
-                  <span className="fw-bold">${item * 100}</span>
+                  {/* PRICE + DELETE */}
+                  <div className="d-flex justify-content-between align-items-center w-100 w-md-auto">
 
-                  {/* DELETE */}
-                  <i className="fa-solid fa-trash-can"></i>
+                    <span className="fw-bold">${item * 100}</span>
+
+                    <i className="fa-solid fa-trash-can ms-3 fs-5 text-danger"></i>
+
+                  </div>
 
                 </div>
+
               </div>
             ))}
 
-            <button className="btn btn-dark w-100 mt-2 rounded-pill">
+            <button className="btn btn-dark w-100 mt-2 rounded-pill py-2">
               Update Cart
             </button>
 
@@ -68,7 +73,6 @@ function Cart() {
 
         {/* SUMMARY */}
         <div className="col-12 col-lg-4">
-
           <div className="p-3 p-md-4 border rounded-4">
 
             <h5>Order Summary</h5>
@@ -78,7 +82,9 @@ function Cart() {
                 className="form-control"
                 placeholder="Discount voucher"
               />
-              <button className="btn btn-outline-secondary">Apply</button>
+              <button className="btn btn-outline-secondary">
+                Apply
+              </button>
             </div>
 
             <div className="d-flex justify-content-between">
@@ -98,13 +104,13 @@ function Cart() {
 
             <hr />
 
-            <div className="d-flex justify-content-between fw-bold">
+            <div className="d-flex justify-content-between fw-bold fs-5">
               <span>Total</span>
               <span>$455</span>
             </div>
 
             <Link to="/checkout">
-              <button className="btn btn-dark w-100 mt-3 rounded-pill">
+              <button className="btn btn-dark w-100 mt-3 rounded-pill py-2">
                 Checkout Now
               </button>
             </Link>
