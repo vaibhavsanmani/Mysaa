@@ -100,7 +100,7 @@ function OrderSuccess() {
             </Link>
 
             <Link
-              to="/"
+              to="/products"
               className="btn btn-dark w-100 rounded-pill"
             >
               Continue Shopping
