@@ -13,7 +13,6 @@ function App() {
     <>
       <BrowserRouter>
 
-        {/* Navbar always visible */}
         <Navbar/>
 
         <Routes>
@@ -24,7 +23,6 @@ function App() {
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/orderplaced" element={<OrderSuccess/>}/>  
 
-          {/* 404 Page */}
           <Route path="*" element={<h2 className="text-center mt-5">404 - Page Not Found</h2>} />
         </Routes>
 

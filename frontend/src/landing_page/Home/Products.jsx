@@ -108,7 +108,6 @@ function Products() {
                 />
               </Link>
 
-              {/* CONTENT */}
               <div className="p-3 p-md-4">
 
                 <Link
