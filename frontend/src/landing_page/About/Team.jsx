@@ -24,7 +24,7 @@ function Team() {
 
                     <p className='mb-5'>Connect on&nbsp; 
                         <a href="/"  style={{textDecoration:"none"}}>Instagram</a> 
-                         / <a href="/"  style={{textDecoration:"none"}}>TradingQnA</a> 
+                         / <a href="/"  style={{textDecoration:"none"}}>Trading QnA</a> 
                          / <a href="/"  style={{textDecoration:"none"}}>Twitter</a><br/> </p>
                     
                 </div>
