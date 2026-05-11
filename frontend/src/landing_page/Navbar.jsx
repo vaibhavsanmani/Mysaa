@@ -52,6 +52,11 @@ function Navbar() {
                   About
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link text-dark" to="/about">
+                  new arrivals
+                </Link>
+              </li>
 
               {/* CART BUTTON */}
               <li className="nav-item">
