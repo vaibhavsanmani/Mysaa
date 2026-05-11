@@ -7,6 +7,7 @@ import OrderSuccess from './landing_page/Orders/OrderSuccess';
 import Cart from "./landing_page/Orders/Cart";
 import Products from "./landing_page/Home/Products";
 import ProductDetails from "./landing_page/Home/ProductDetails";
+import Hero from "./landing_page/Home/Hero";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Navbar/>
 
         <Routes>
+          <Route path="/" element={<Hero />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<CartAll />} />
           <Route path="/checkout" element={<Checkout/>}/>
