@@ -19,12 +19,12 @@ function Hero() {
           border-radius:50px;
           background:rgba(255,255,255,0.08);
           border:1px solid rgba(255,255,255,0.1);
-          margin-bottom:20px;
+          margin-bottom:25px;
           font-size:14px;
         }
 
         .hero-title{
-          font-size:65px;
+          font-size:60px;
           font-weight:800;
           line-height:1.1;
         }
