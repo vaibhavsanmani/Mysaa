@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Checkout() {
   return (
-    <div className="container py-3 py-md-4">
+    <div className="container py-4 py-md-5 theme-page-container">
 
-      <h2 className="mb-3 mb-md-4">Checkout</h2>
+      <h2 className="mb-3 mb-md-4 theme-heading">Checkout</h2>
 
       <div className="row g-3 g-md-4">
 
@@ -13,15 +13,8 @@ function Checkout() {
         <div className="col-12 col-lg-8">
 
           {/* BILLING */}
-          <div
-            className="p-3 p-md-4 mb-3"
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "16px",
-              background: "#fff"
-            }}
-          >
-            <h5 className="mb-3">Billing Details</h5>
+          <div className="p-3 p-md-4 mb-3 theme-panel-soft rounded-4">
+            <h5 className="mb-3 theme-heading">Billing Details</h5>
 
             <div className="row">
 
@@ -34,11 +27,11 @@ function Checkout() {
               </div>
 
               <div className="col-12 mb-2 mb-md-3">
-                <input type="email" className="form-control" placeholder="Email Address" />
+                <input type="email" className="form-control theme-input" placeholder="Email Address" />
               </div>
 
               <div className="col-12 mb-2 mb-md-3">
-                <input className="form-control" placeholder="Address" />
+                <input className="form-control theme-input" placeholder="Address" />
               </div>
 
               <div className="col-6 col-md-6 mb-2 mb-md-3">
@@ -53,15 +46,8 @@ function Checkout() {
           </div>
 
           {/* PAYMENT */}
-          <div
-            className="p-3 p-md-4"
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "16px",
-              background: "#fff"
-            }}
-          >
-            <h5 className="mb-3">Payment Method</h5>
+          <div className="p-3 p-md-4 theme-panel-soft rounded-4">
+            <h5 className="mb-3 theme-heading">Payment Method</h5>
 
             <div className="form-check mb-2">
               <input className="form-check-input" type="radio" name="payment" />
@@ -83,16 +69,8 @@ function Checkout() {
 
         {/* RIGHT SIDE */}
         <div className="col-12 col-lg-4">
-          <div
-            className="p-3 p-md-4 position-lg-sticky"
-            style={{
-              top: "20px",
-              border: "1px solid #ddd",
-              borderRadius: "16px",
-              background: "#fff"
-            }}
-          >
-            <h5>Order Summary</h5>
+          <div className="p-3 p-md-4 position-lg-sticky theme-panel-soft rounded-4" style={{ top: "20px" }}>
+            <h5 className="theme-heading">Order Summary</h5>
 
             <div className="d-flex justify-content-between mt-3">
               <span>Sub Total</span>
@@ -118,7 +96,7 @@ function Checkout() {
 
             <Link
               to="/orderplaced"
-              className="btn btn-dark w-100 mt-3 rounded-pill"
+              className="btn theme-accent-btn w-100 mt-3 rounded-pill"
             >
               Place Order
             </Link>

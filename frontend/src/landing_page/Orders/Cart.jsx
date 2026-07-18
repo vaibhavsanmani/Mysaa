@@ -11,15 +11,15 @@ function Cart() {
   };
 
   return (
-    <div className="container py-3">
+    <div className="container py-4 py-md-5 theme-page-container">
 
       <div className="row g-3">
 
         {/* CART ITEMS */}
         <div className="col-12 col-lg-8">
-          <div className="p-3 p-md-4 border rounded-4">
+          <div className="p-3 p-md-4 theme-panel-soft rounded-4">
 
-            <h5 className="mb-3">Your Cart</h5>
+            <h5 className="mb-3 theme-heading">Your Cart</h5>
 
             {[1, 2, 3].map((item, index) => (
               <div key={index} className="border-bottom pb-3 mb-3">
@@ -39,10 +39,11 @@ function Cart() {
                   <div
                     className="d-flex align-items-center justify-content-between px-2"
                     style={{
-                      border: "1px solid #ccc",
+                      border: "1px solid rgba(255,255,255,0.12)",
                       borderRadius: "50px",
                       width: "100px",
-                      height: "36px"
+                      height: "36px",
+                      background: "rgba(255,255,255,0.04)"
                     }}
                   >
                     <button className="btn btn-sm p-0 border-0 fs-5">-</button>
@@ -64,7 +65,7 @@ function Cart() {
               </div>
             ))}
 
-            <button className="btn btn-dark w-100 mt-2 rounded-pill py-2">
+            <button className="btn theme-accent-btn w-100 mt-2 rounded-pill py-2">
               Update Cart
             </button>
 
@@ -73,16 +74,16 @@ function Cart() {
 
         {/* SUMMARY */}
         <div className="col-12 col-lg-4">
-          <div className="p-3 p-md-4 border rounded-4">
+          <div className="p-3 p-md-4 theme-panel-soft rounded-4">
 
-            <h5>Order Summary</h5>
+            <h5 className="theme-heading">Order Summary</h5>
 
             <div className="input-group my-3">
               <input
-                className="form-control"
+                className="form-control theme-input"
                 placeholder="Discount voucher"
               />
-              <button className="btn btn-outline-secondary">
+              <button className="btn theme-outline-btn">
                 Apply
               </button>
             </div>
@@ -110,7 +111,7 @@ function Cart() {
             </div>
 
             <Link to="/checkout">
-              <button className="btn btn-dark w-100 mt-3 rounded-pill py-2">
+              <button className="btn theme-accent-btn w-100 mt-3 rounded-pill py-2">
                 Checkout Now
               </button>
             </Link>

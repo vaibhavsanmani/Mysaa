@@ -55,7 +55,7 @@ function Team() {
               }}
             >
               <img
-                src="./images/Owner.png"
+                src="/images/Owner.png"
                 alt="Owner"
                 className="img-fluid"
                 style={{

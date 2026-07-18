@@ -3,34 +3,20 @@ import { Link } from "react-router-dom";
 
 function OrderSuccess() {
   return (
-    <div className="container py-3 py-md-5">
+    <div className="container py-4 py-md-5 theme-page-container">
 
       {/* SUCCESS MESSAGE */}
-      <div
-        className="text-center mb-3 mb-md-4 p-3 p-md-4"
-        style={{
-          border: "1px solid #ddd",
-          borderRadius: "16px",
-          background: "#fff"
-        }}
-      >
-        <h4 className="mb-2">✅ Order Placed Successfully</h4>
-        <p className="text-muted mb-0">Thank you for your purchase!</p>
+      <div className="text-center mb-3 mb-md-4 p-3 p-md-4 theme-panel-soft rounded-4">
+        <h4 className="mb-2 theme-heading">✅ Order Placed Successfully</h4>
+        <p className="theme-muted mb-0">Thank you for your purchase!</p>
       </div>
 
       <div className="row g-3 g-md-4">
 
         {/* LEFT - INVOICE */}
         <div className="col-12 col-lg-8">
-          <div
-            className="p-3 p-md-4"
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "16px",
-              background: "#fff"
-            }}
-          >
-            <h5 className="mb-3">Order Invoice</h5>
+          <div className="p-3 p-md-4 theme-panel-soft rounded-4">
+            <h5 className="mb-3 theme-heading">Order Invoice</h5>
 
             <div className="d-flex justify-content-between small">
               <span>Order ID</span>
@@ -82,26 +68,19 @@ function OrderSuccess() {
 
         {/* RIGHT - ACTIONS */}
         <div className="col-12 col-lg-4">
-          <div
-            className="p-3 p-md-4 text-center"
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "16px",
-              background: "#fff"
-            }}
-          >
-            <h5 className="mb-3">What next?</h5>
+          <div className="p-3 p-md-4 text-center theme-panel-soft rounded-4">
+            <h5 className="mb-3 theme-heading">What next?</h5>
 
             <Link
               to="/cart"
-              className="btn btn-outline-dark w-100 mb-2 rounded-pill"
+              className="btn theme-outline-btn w-100 mb-2 rounded-pill"
             >
               Back to Cart
             </Link>
 
             <Link
               to="/products"
-              className="btn btn-dark w-100 rounded-pill"
+              className="btn theme-accent-btn w-100 rounded-pill"
             >
               Continue Shopping
             </Link>

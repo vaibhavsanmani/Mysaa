@@ -76,7 +76,7 @@ function Products() {
   ];
 
   return (
-    <div className="container py-4 py-md-5">
+    <div className="container py-4 py-md-5 theme-page-container">
       <div className="row g-3 g-md-4">
 
         {products.map((item) => (
@@ -85,10 +85,9 @@ function Products() {
             key={item.id}
           >
             <div
-              className="h-100 card-hover shadow-sm"
+              className="h-100 card-hover shadow-sm theme-card"
               style={{
                 borderRadius: "16px",
-                background: "#fff",
                 overflow: "hidden",
                 transition: "0.3s"
               }}
@@ -112,18 +111,18 @@ function Products() {
 
                 <Link
                   to={`/product/${item.id}`}
-                  style={{ textDecoration: "none", color: "#000" }}
+                  style={{ textDecoration: "none", color: "#ffffff" }}
                 >
                   <h6 className="mb-2">{item.name}</h6>
                 </Link>
 
-                <p className="text-muted small mb-2">
+                <p className="theme-muted small mb-2">
                   {item.description}
                 </p>
 
                 <div className="d-flex justify-content-between align-items-center">
                   <span className="fw-bold">{item.price}</span>
-                  <button className="btn btn-dark btn-sm rounded-pill px-3">
+                  <button className="btn theme-outline-btn btn-sm rounded-pill px-3">
                     Add
                   </button>
                 </div>
