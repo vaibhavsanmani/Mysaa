@@ -116,7 +116,10 @@ function Footer() {
       {/* CSS */}
       <style>{`
         .footer-section {
-          background: #111827;
+          background: rgba(17, 24, 39, 0.7);
+          backdrop-filter: blur(10px);
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
 
         .logo-text {
