@@ -53,6 +53,11 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link to="/qna" className="btn theme-outline-btn rounded-pill px-3">
+                  QnA
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/products">
                   New Arrivals
                 </Link>

@@ -8,6 +8,7 @@ import Cart from "./landing_page/Orders/Cart";
 import Products from "./landing_page/Home/Products";
 import ProductDetails from "./landing_page/Home/ProductDetails";
 import Hero from "./landing_page/Home/Hero";
+import Qna from "./landing_page/Qna";
 
 function App() {
   return (
@@ -21,8 +22,8 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<CartAll />} />
           <Route path="/checkout" element={<Checkout/>}/>
-          <Route path="/cart" element={<Cart/>}/>  
           <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/qna" element={<Qna/>}/>
           <Route path="/orderplaced" element={<OrderSuccess/>}/>  
 
           <Route path="*" element={<h2 className="text-center mt-5">404 - Page Not Found</h2>} />
