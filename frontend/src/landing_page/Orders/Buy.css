@@ -1,0 +1,93 @@
+/* Minimal styling for Buy section */
+.buy-page {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.buy-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(20,20,40,0.06);
+  max-width: 760px;
+  width: 100%;
+}
+
+.buy-media img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.buy-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buy-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.buy-desc {
+  margin: 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.buy-meta {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buy-price {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.buy-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.buy-btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#2563eb,#7c3aed);
+  color: #fff !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(37,99,235,0.12);
+}
+
+@media (max-width: 720px) {
+  .buy-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buy-media img {
+    width: 100%;
+    height: auto;
+  }
+
+  .buy-meta {
+    width: 100%;
+    flex-direction: row;
+  }
+}
