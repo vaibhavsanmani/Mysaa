@@ -1,0 +1,122 @@
+/* Order Success Section */
+.order-success-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+/* Success Heading */
+.success-heading {
+  color: #2d3436;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.success-desc {
+  color: #636e72;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Invoice Card */
+.invoice-card {
+  background: #ffffff;
+  border: 1px solid #e1e8ed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.invoice-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-card h5 {
+  color: #2d3436;
+  border-bottom: 2px solid #f0f1f5;
+  padding-bottom: 1rem;
+}
+
+.invoice-card hr {
+  background: #e1e8ed;
+  border: none;
+  height: 1px;
+}
+
+/* Action Card */
+.action-card {
+  background: #ffffff;
+  border: 1px solid #e1e8ed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.action-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.action-card h5 {
+  color: #2d3436;
+  border-bottom: 2px solid #f0f1f5;
+  padding-bottom: 1rem;
+}
+
+/* Success Amount */
+.success-amount {
+  color: #27ae60;
+  font-size: 1.25rem;
+}
+
+/* Button Styles */
+.btn-outline-secondary {
+  color: #2d3436;
+  border-color: #dfe6e9;
+  border-width: 2px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f0f1f5;
+  border-color: #2d3436;
+  color: #2d3436;
+}
+
+.btn-primary {
+  background-color: #0984e3;
+  border-color: #0984e3;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0770d4;
+  border-color: #0770d4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .success-heading {
+    font-size: 1.5rem;
+  }
+
+  .success-desc {
+    font-size: 0.95rem;
+  }
+
+  .order-success-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .invoice-card,
+  .action-card {
+    padding: 1.5rem !important;
+  }
+
+  .success-heading {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .success-desc {
+    font-size: 0.9rem;
+  }
+}
