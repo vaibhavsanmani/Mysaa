@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg navbar-light bg-white py-3"
-        style={{
-          borderBottom: "1px solid rgba(0,0,0,0.08)",
-        }}
-      >
+      <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 mysa-navbar">
         <div className="container">
 
           {/* LOGO */}
