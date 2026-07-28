@@ -2,186 +2,80 @@ import React from "react";
 
 function Team() {
   return (
-    <div
-      className="container-fluid py-5"
-      style={{
-        background: "linear-gradient(to right, #f8f9fa, #ffffff)",
-      }}
-    >
-      <div className="container">
+    <section className="py-5">
+      <div className="text-center mb-5">
+        <p className="theme-muted mb-2" style={{ letterSpacing: '1.5px', fontSize: '0.8rem', textTransform: 'uppercase' }}>
+          Our team
+        </p>
+        <h2 className="fw-bold" style={{ fontSize: 'clamp(1.9rem, 3vw, 2.8rem)' }}>
+          Meet the creative mind behind the work.
+        </h2>
+      </div>
 
-        {/* HEADING */}
-        <div className="text-center mb-5">
-          <p
+      <div className="row g-4 align-items-center">
+        <div className="col-12 col-lg-5 text-center">
+          <div
             style={{
-              color: "#ff6b00",
-              fontWeight: "600",
-              letterSpacing: "2px",
+              width: '260px',
+              height: '260px',
+              margin: 'auto',
+              borderRadius: '50%',
+              padding: '2px',
+              border: '1px solid rgba(31,31,31,0.08)',
+              background: 'rgba(255,255,255,0.85)',
             }}
           >
-            OUR TEAM
+            <img
+              src="/images/Owner.png"
+              alt="Founder"
+              className="img-fluid"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: '50%',
+              }}
+            />
+          </div>
+
+          <h3 className="mt-4 mb-1 fw-bold">Asmita Bagade</h3>
+          <p className="theme-muted" style={{ letterSpacing: '0.8px' }}>
+            Founder & CEO
           </p>
-
-          <h1
-            className="fw-bold"
-            style={{
-              fontSize: "clamp(2rem,5vw,3.5rem)",
-            }}
-          >
-            Meet The Creative Mind
-          </h1>
         </div>
 
-        {/* CARD */}
-        <div
-          className="row align-items-center shadow-lg rounded-5 overflow-hidden"
-          style={{
-            backgroundColor: "#fff",
-          }}
-        >
-
-          {/* IMAGE SECTION */}
-          <div className="col-12 col-lg-5 text-center p-5">
-
-            <div
-              style={{
-                width: "280px",
-                height: "280px",
-                margin: "auto",
-                borderRadius: "50%",
-                padding: "8px",
-                background:
-                  "linear-gradient(135deg, #ff6b00, #ffb347)",
-              }}
-            >
-              <img
-                src="/images/Owner.png"
-                alt="Owner"
-                className="img-fluid"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  borderRadius: "50%",
-                  border: "6px solid white",
-                }}
-              />
-            </div>
-
-            <h2 className="mt-4 fw-bold">Asmita Bagade</h2>
-
-            <p
-              className="text-muted"
-              style={{
-                letterSpacing: "1px",
-                fontWeight: "500",
-              }}
-            >
-              Founder & CEO
+        <div className="col-12 col-lg-7">
+          <div className="p-4 rounded-4" style={{ backgroundColor: 'rgba(31,31,31,0.03)', border: '1px solid rgba(31,31,31,0.06)' }}>
+            <p className="theme-muted mb-3" style={{ lineHeight: '1.9' }}>
+              We focus on clean concepts, subtle details, and visual harmony. Every project is designed to feel intentional, calm, and memorable.
             </p>
-
-            {/* SOCIAL BUTTONS */}
-            <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap">
-
-              <a
-                href="/"
-                className="btn rounded-pill px-4"
-                style={{
-                  backgroundColor: "#ff6b00",
-                  color: "white",
-                  fontWeight: "500",
-                }}
-              >
+            <p className="theme-muted mb-4" style={{ lineHeight: '1.9' }}>
+              Our work blends contemporary design with quiet luxury, making every interaction feel polished and thoughtfully composed.
+            </p>
+            <div className="d-flex flex-wrap gap-3" style={{ fontSize: '0.95rem' }}>
+              <a href="/" className="text-decoration-none theme-accent" style={{ fontWeight: '600' }}>
                 Instagram
               </a>
-
-              <a
-                href="/"
-                className="btn btn-outline-dark rounded-pill px-4"
-              >
+              <a href="/" className="text-decoration-none theme-accent" style={{ fontWeight: '600' }}>
                 Twitter
               </a>
-
-              <a
-                href="/"
-                className="btn btn-outline-dark rounded-pill px-4"
-              >
+              <a href="/" className="text-decoration-none theme-accent" style={{ fontWeight: '600' }}>
                 Trading QnA
               </a>
-
             </div>
           </div>
 
-          {/* CONTENT SECTION */}
-          <div className="col-12 col-lg-7 p-4 p-lg-5">
-
-            <h3
-              className="fw-bold mb-4"
-              style={{
-                fontSize: "clamp(1.5rem,4vw,2.3rem)",
-              }}
-            >
-              Bringing Creativity To Life ✨
-            </h3>
-
-            <p
-              className="text-muted"
-              style={{
-                lineHeight: "2",
-                fontSize: "1.05rem",
-              }}
-            >
-              We started Mysa Arts with a vision to express creativity without
-              limits, transforming ideas into visually compelling stories
-              through modern design and artistic innovation.
+          <div className="mt-4 p-4 rounded-4" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(31,31,31,0.06)' }}>
+            <p className="mb-2 fw-bold" style={{ marginBottom: '0.75rem' }}>
+              “Creating art is our zen.”
             </p>
-
-            <p
-              className="text-muted"
-              style={{
-                lineHeight: "2",
-                fontSize: "1.05rem",
-              }}
-            >
-              Today, Mysa Arts is building a strong identity in the creative
-              industry by blending aesthetics, storytelling, and modern visual
-              culture into every project we create.
+            <p className="theme-muted mb-0" style={{ lineHeight: '1.9' }}>
+              A minimalist process that makes space for clarity, beauty, and purposeful storytelling.
             </p>
-
-            <p
-              className="text-muted"
-              style={{
-                lineHeight: "2",
-                fontSize: "1.05rem",
-              }}
-            >
-              We continuously evolve with trends, engage with the creative
-              community, and refine our work to create impactful experiences
-              that inspire people.
-            </p>
-
-            {/* QUOTE BOX */}
-            <div
-              className="mt-4 p-4 rounded-4"
-              style={{
-                backgroundColor: "#fff5eb",
-                borderLeft: "5px solid #ff6b00",
-              }}
-            >
-              <h5
-                style={{
-                  color: "#ff6b00",
-                  marginBottom: "0",
-                }}
-              >
-                “Creating art is our zen.”
-              </h5>
-            </div>
-
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
