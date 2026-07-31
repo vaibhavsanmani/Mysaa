@@ -4,81 +4,85 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 mysa-navbar">
-        <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-light mysa-navbar sticky-top">
+      <div className="container">
 
-          {/* LOGO */}
-          <Link
-            className="navbar-brand fw-bold"
-            to="/products"
-            style={{ fontSize: "22px" }}
-          >
-            <i className="fa-brands fa-magento"></i> Mysa
-          </Link>
+        {/* Logo */}
+        <Link className="navbar-brand logo" to="/products">
+          <i className="fa-brands fa-magento me-2"></i>
+          <span>Mysa</span>
+        </Link>
 
-          {/* TOGGLE (Mobile) */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+        {/* Mobile Toggle */}
+        <button
+          className="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-          {/* NAV ITEMS */}
-          <div className="collapse navbar-collapse" id="nav">
-            <ul className="navbar-nav ms-auto align-items-center gap-3">
+        {/* Nav */}
+        <div className="collapse navbar-collapse" id="nav">
+          <ul className="navbar-nav ms-auto align-items-center gap-lg-4 gap-2">
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
+            <li className="nav-item">
+              <Link className="nav-link custom-link" to="/">
+                Home
+              </Link>
+            </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/products">
-                  Shop
-                </Link>
-              </li>
+            <li className="nav-item">
+              <Link className="nav-link custom-link" to="/products">
+                Shop
+              </Link>
+            </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/qna" className="btn theme-outline-btn rounded-pill px-3">
-                  QnA
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/products">
-                  New Arrivals
-                </Link>
-              </li>
+            <li className="nav-item">
+              <Link className="nav-link custom-link" to="/about">
+                About
+              </Link>
+            </li>
 
-              {/* CART BUTTON */}
-              <li className="nav-item">
-                <Link to="/cart" className="btn theme-outline-btn rounded-pill px-3">
-                  <i className="fa-solid fa-cart-shopping"></i>
-                </Link>
-              </li>
+            <li className="nav-item">
+              <Link className="nav-link custom-link" to="/products">
+                New Arrivals
+              </Link>
+            </li>
 
-              {/* CHECKOUT BUTTON */}
-              <li className="nav-item">
-                <Link to="/checkout" className="btn theme-accent-btn rounded-pill px-3">
-                  Checkout
-                </Link>
-              </li>
+            <li className="nav-item">
+              <Link
+                to="/qna"
+                className="btn btn-light rounded-pill px-4 border"
+              >
+                QnA
+              </Link>
+            </li>
 
-            </ul>
-          </div>
+            <li className="nav-item">
+              <Link
+                to="/cart"
+                className="cart-btn"
+              >
+                <i className="fa-solid fa-cart-shopping"></i>
+              </Link>
+            </li>
 
+            <li className="nav-item">
+              <Link
+                to="/checkout"
+                className="btn checkout-btn rounded-pill px-4"
+              >
+                Checkout
+              </Link>
+            </li>
+
+          </ul>
         </div>
-      </nav>
-    </>
+
+      </div>
+    </nav>
   );
 }
 
